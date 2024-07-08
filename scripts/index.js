@@ -1,4 +1,4 @@
-const div = document.querySelector('#container'); 
+const div = document.querySelector('#container');
 const size = 5;
 function addDiv(x, y) {
     const sdiv = document.createElement('div');
@@ -32,3 +32,15 @@ function out(e) {
 div.addEventListener('mouseover', print);
 div.addEventListener('mousedown', inn)
 div.addEventListener('click', out);
+
+function remove() {
+    while (true) {
+        const small = div.querySelector('.small');
+        if (small)
+            div.removeChild(small);
+        else break;
+    }
+}
+
+const button = document.querySelector('button');
+button.addEventListener('click', remove);
