@@ -46,3 +46,17 @@ button:hover {
     color: purple;
     border: 2px solid rgb(192, 168, 192);
 }
+
+.size-container {
+    display: flex;
+    justify-content: center;
+}
+
+#show-size {
+    margin-left: 7%;
+    /* thala for a reason!!! */
+}
+
+#size-desc {
+    margin-right: 3%;
+}
