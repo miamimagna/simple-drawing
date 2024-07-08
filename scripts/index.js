@@ -29,7 +29,7 @@ function out(e) {
     mouseState = false;
 }
 
-div.addEventListener('mouseover', print);
+div.addEventListener('mousemove', print);
 div.addEventListener('mousedown', inn)
 div.addEventListener('click', out);
 
