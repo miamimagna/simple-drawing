@@ -8,7 +8,7 @@ body {
 
 .small {
     background-color: white;
-} 
+}
 
 .content {
     position: fixed;
@@ -17,6 +17,7 @@ body {
     background-color: rgba(142, 16, 192, 0.199);
     z-index: 1;
     width: 50%;
+    padding-bottom: 1em;
     text-align: center;
 }
 
@@ -30,4 +31,18 @@ h1 {
     left: 0;
     width: 100%;
     height: 100vh;
+}
+
+button {
+    background-color: rgba(142, 16, 192, 0);
+    color: rgb(192, 168, 192);
+    border: 2px solid rgba(142, 16, 192, 0.199);
+    padding: 0.5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    background-color: rgb(192, 168, 192);
+    color: purple;
+    border: 2px solid rgb(192, 168, 192);
 }
