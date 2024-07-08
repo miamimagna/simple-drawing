@@ -1,6 +1,16 @@
 const div = document.querySelector('#container');
-const size = 5;
+const fixedDiv = document.querySelector('.content');
+const slider = document.querySelector('#size');
+const showSize = document.querySelector('#show-size');
+
+function sizeShow() {
+    showSize.innerText = slider.value;
+}
+
+slider.addEventListener('click', sizeShow);
+
 function addDiv(x, y) {
+    const size = slider.value;
     const sdiv = document.createElement('div');
     sdiv.classList.add('small');
     sdiv.style.width = size + 'px';
@@ -25,13 +35,13 @@ function print(e) {
 }
 
 function out(e) {
-    addDiv(e.x, e.y);
     mouseState = false;
 }
 
 div.addEventListener('mousemove', print);
 div.addEventListener('mousedown', inn)
-div.addEventListener('click', out);
+div.addEventListener('mouseup', out);
+fixedDiv.addEventListener('mouseup', out);
 
 function remove() {
     while (true) {
