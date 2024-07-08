@@ -1,4 +1,4 @@
-const div = document.querySelector('#container');
+const div = document.querySelector('#container'); 
 const size = 5;
 function addDiv(x, y) {
     const sdiv = document.createElement('div');
