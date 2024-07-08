@@ -1,14 +1,33 @@
 body {
     color: white;
     background-color: black;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(192, 168, 192);
 }
 
-.imgDummy {
-    width: 60vw;
-    margin: 0 auto;
+.small {
+    background-color: white;
 }
 
-button {
-    display: block;
-    margin: 2em auto;
+.content {
+    position: fixed;
+    left: 25%;
+    top: 0;
+    background-color: rgba(142, 16, 192, 0.199);
+    z-index: 1;
+    width: 50%;
+    text-align: center;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+#container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
 }
