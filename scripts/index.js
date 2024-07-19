@@ -30,6 +30,7 @@ function inn(e) {
     addDiv(e.x, e.y);
 }
 function print(e) {
+    e.preventDefault();
     if (mouseState)
         addDiv(e.x, e.y);
 }
