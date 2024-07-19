@@ -38,10 +38,10 @@ function out(e) {
     mouseState = false;
 }
 
-div.addEventListener('mousemove', print);
-div.addEventListener('mousedown', inn)
-div.addEventListener('mouseup', out);
-fixedDiv.addEventListener('mouseup', out);
+div.addEventListener('pointermove', print);
+div.addEventListener('pointerdown', inn)
+div.addEventListener('pointerup', out);
+fixedDiv.addEventListener('pointerup', out);
 
 function remove() {
     while (true) {
